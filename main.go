@@ -37,10 +37,6 @@ func newClient() *kubernetes.Clientset {
 		panic(err.Error())
 	}
 
-	//mc.MetricsV1beta1().NodeMetricses().Get("your node name", metav1.GetOptions{})
-	//mc.MetricsV1beta1().NodeMetricses().List(metav1.ListOptions{})
-	//mc.MetricsV1beta1().PodMetricses(metav1.NamespaceAll).List(metav1.ListOptions{})
-
 	return clientset
 
 }
